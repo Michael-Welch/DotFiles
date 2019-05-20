@@ -17,6 +17,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'junegunn/fzf.vim' 
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
+Plugin 'flazz/vim-colorschemes'
 
 call vundle#end()
 " }}}
@@ -69,6 +70,9 @@ highlight PmenuSel ctermbg=green
 " Airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='jellybeans'
+
+" colorscheme
+colorscheme gruvbox
 
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
