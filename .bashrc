@@ -51,7 +51,11 @@ alias vi='vim'
 # Make a nice prompt
 force_color_prompt=yes
 
-export PS1="\[\e[36m\u\]\[\e[37m\]@\[\e[35m\h\]\[\e[35m\w\] \[\e[33m\]\[\e[35m\]$ \[\e[0m\]\]\]\]\]\]\]\]\]\]\]\]\]\]\]\]\]\]"
+if [ "`id -u`" -eq 0  ]; then
+PS1="\[\033[m\]|\[\033[1;35m\]\t\[\033[m\]|\[\e[1;31m\]\u\[\e[1;36m\]\[\033[m\]@\[\e[1;36m\]\h\[\033[m\]:\[\e[0m\]\[\e[1;32m\][\W]> \[\e[0m\]"
+else
+PS1="\[\033[m\]|\[\033[1;35m\]\t\[\033[m\]|\[\e[1m\]\u\[\e[1;36m\]\[\033[m\]@\[\e[1;36m\]\h\[\033[m\]:\[\e[0m\]\[\e[1;32m\][\W]> \[\e[0m\]"
+fi
 # Set the promptcommand to be nothing, as it casuses PS1 to be printed twice on some systems
 export PROMPT_COMMAND=""
 # Have GPG key password prompts be on the commandline
