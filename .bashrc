@@ -50,10 +50,9 @@ alias vi='vim'
 
 # Make a nice prompt
 force_color_prompt=yes
-export PS1="\[\033[38;5;27m\]\u\[$(tput sgr0)\]\[\033[38;5;1m\]@\h\[$(tput sgr0)\]\[\033[38;5;2m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;2m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
+
+export PS1="\[\e[36m\u\]\[\e[37m\]@\[\e[35m\h\]\[\e[35m\w\] \[\e[33m\]\[\e[35m\]$ \[\e[0m\]"
 # Set the promptcommand to be nothing, as it casuses PS1 to be printed twice on some systems
 export PROMPT_COMMAND=""
 # Have GPG key password prompts be on the commandline
 export GPG_TTY=$(tty)
-
-source virtualenvwrapper.sh

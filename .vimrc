@@ -72,7 +72,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='jellybeans'
 
 " colorscheme
-colorscheme gruvbox
+colorscheme jellybeans
 
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
