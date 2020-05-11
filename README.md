@@ -1,6 +1,8 @@
-To clone, run: git clone git@github.com:Michael-Welch/DotFiles.git
+To clone, run: 
 
-Make sure to add an ssh key
+    git clone git@github.com:Michael-Welch/DotFiles.git
+
+Make sure to add an ssh key:
 
     Step 1: ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
     
@@ -11,11 +13,19 @@ Make sure to add an ssh key
     Step 4: Add a new SSH key in github
 
 
-Then just run ./setup.sh
+Then just run 
+    
+    ./setup.sh
 
-After installation, in the DotFiles folder, run: vim test.txt
+After installation, in the DotFiles folder, run: 
 
-Run :PluginInstall to install the Vundle plugins
+    vim test.txt
 
-Also to update the bash, restart .bashrc with: source ~/.bashrc
+To install the Vundle plugins, run: 
+
+    :PluginInstall 
+
+Also to update the bash, restart .bashrc with: 
+    
+    source ~/.bashrc
 
